@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: Javascript_Calculator/index.html
+  upload: Javascript_Calculator/index.html
+
+- url: /(.*)
+  static_files: Javascript_Calculator/\1
+  upload: Javascript_Calculator/(.*)
